@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-06T17:00:38.010546" rpa="false" schemaversion="5">
+<suite id="s1" name="Exercicio15" source="C:\Users\Taynara\Downloads\logica\exercicio15.robot">
+<test id="s1-t1" name="Exemplo de Uso" line="8">
+<kw name="Verificar Fila Preferencial">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-06T17:00:38.143724" level="INFO">${fila_preferencial} = Não</msg>
+<var>${fila_preferencial}</var>
+<arg>Não</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-06T17:00:38.142725" elapsed="0.000999"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Set Variable" owner="BuiltIn">
+<arg>Sim</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-06T17:00:38.145758" elapsed="0.000000"/>
+</kw>
+<arg>${idade} &gt; 60 or "${condicao_especial}" in ['deficiente', 'gestante']</arg>
+<arg>Set Variable</arg>
+<arg>Sim</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-02-06T17:00:38.143724" elapsed="0.002034"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${nome} deve usar: ${fila_preferencial}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-06T17:00:38.145758" elapsed="0.000956"/>
+</kw>
+<arg>Maria</arg>
+<arg>22</arg>
+<arg>deficiente</arg>
+<status status="PASS" start="2024-02-06T17:00:38.140731" elapsed="0.006980"/>
+</kw>
+<status status="PASS" start="2024-02-06T17:00:38.138736" elapsed="0.009995"/>
+</test>
+<status status="PASS" start="2024-02-06T17:00:38.097463" elapsed="0.054237"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicio15">Exercicio15</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
